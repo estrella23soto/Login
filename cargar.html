@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="estilos.css">
+    <style type="text/css">
+            .boton{
+                margin-bottom: 15px;
+                border: 1px solid rgb(158, 157, 157);
+                text-align: center;
+                padding: 15px;
+                font-size: 30px;
+                float: center;
+                width: 470px;
+                background-color: white;
+                font-size: 25px;
+
+            }
+
+            .links a{
+                text-decoration: none;
+                color: black;
+                display: block;
+                padding: 10px;
+                border: 1px solid black;
+                
+            }
+
+            .links{
+                background-color: #f9f9f9;
+                display: none;
+            }
+            .links a:hover {
+                background-color: #0e7a71 ;
+                color: white;
+            }
+
+                .desplegable:hover  .links{
+                    display: block;
+
+                }
+
+                .boton i a{
+                    text-align: left;
+                }
+                #comida {
+                margin-bottom: 15px;
+                border: 1px solid rgb(158, 157, 157);
+                text-align: center;
+                padding: 15px;
+                font-size: 30px;
+                float: center;
+                width: 470px;
+                background-color: white;
+                font-size: 20px;
+
+                }
+                #comida::after{
+                    background-color: aquamarine;
+
+                }
+                #tacos{
+                    width: 465px;
+                    margin-left: 14px;
+                }
+    </style>
+</head>
+<body>
+    <form class="formulario" >
+    
+        <h1>Cargar Articulo</h1>
+        <div class="contenedor">
+            <div class="desplegable" >
+
+                <button class="boton" placeholder="Tipo Subsistema" >
+                    <i class="bi bi-bank"></i>
+                    Tipo Subsistema </button>
+                
+                <div class="links">
+                    <a href="#" >Tipo de Subsistema</a>
+                    <a href="#" >Universidad Tegnologica</a>
+                    <a href="#" >Universidad Politecnica</a>
+                    <a href="#" >Instituto Tegnologico</a>
+                </div>
+               
+                </div>
+            
+                
+                <div class="input-contenedor" >
+                    <i class="bi bi-journal"></i>
+                    <input type="text" placeholder="Tipo de Articulo" >
+                </div>
+              
+                
+                <div class="input-contenedor" >
+                    <i class="bi bi-person-fill"></i>
+                    <input type="text" placeholder="Autor" >
+                </div> 
+                
+                </div>
+                   
+                <div class="input-contenedor" id="tacos" >
+                    <i class="bi bi-person-fill"></i>
+                    <input type="text" placeholder="Brebe Resumen del Articulo" >
+                    
+                     <i class="bi bi-book" style="text-align: left;">
+                        </i>
+                </div> 
+                
+                </div>
+               
+              
+                    
+                    <div>
+                        
+                        <input type="file" id="comida">
+                    </div>
+                   
+           
+                    
+            
+                <input  type="submit" value="Cargar Archivo" class="button">
+                
+        </div>
+            
+        </form>
+</body>
+</html>
